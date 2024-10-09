@@ -9,6 +9,7 @@ import todo from './assets/todoApp.png'
 import callWaiting from './assets/callwaiting.svg'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import emailjs from "emailjs-com";
+import resume from './assets/Madhu.resume.pdf'
 import { Tooltip } from 'react-tooltip';
 
 function App() {
@@ -18,6 +19,13 @@ function App() {
     from_name: "",
     message: ""
   });
+ const [lightMode , setLightMode] = useState(true);
+  const handleTheme =()=>{
+    document.body.classList.toggle('light');
+    console.log("light mode on");
+    setLightMode(!lightMode);
+    
+  }
 
 
   const [statusMessage, setStatusMessage] = useState("");
@@ -55,12 +63,12 @@ function App() {
       <div className="nav">
         <h2 id='brand' className="brand">M D</h2>
         <div className="actionBtns">
-          <button id="resume" className="resume">
+        <a class="btn btn-primary" href={resume} download > <button id="resume" className="resume">
             {" "}
             Resume<i class="fas fa-download"></i>
-          </button>
-          <button className="toggle">
-            <i id="modeIcon" className="fas fa-sun">
+          </button></a>
+          <button onClick={handleTheme} className="toggle">
+            <i id="modeIcon" className={ lightMode ? "fas fa-moon" : "fas fa-sun"}>
               &nbsp;&nbsp;
             </i>
           </button>
@@ -79,7 +87,7 @@ function App() {
                   void <span id="highlightRole1">role</span>&nbsp;( &nbsp; ) &nbsp; &#123;
                   <br />
                   &nbsp;&nbsp;System.out.println ( &nbsp; " &nbsp;
-                  <span id="highlightRole1">Backend Developer</span> 🖥️ &nbsp; " &nbsp; );
+                  <span id="highlightRole1">Backend Developer</span> 🖥️  " &nbsp; );
                   <br />
                   &#125;
                 </span>
@@ -691,16 +699,16 @@ function App() {
           <a style={{backgroundColor:'transparent'}}  href="#" id="facebook-btn" >
             <i style={{backgroundColor:'transparent'}} className="fab fa-facebook"></i>
           </a>
-          <a style={{backgroundColor:'transparent'}} href="#" id="github-btn">
+          <a style={{backgroundColor:'transparent'}} target='_blank' href="https://github.com/MadhuDamodhar" id="github-btn">
             <i className="fab fa-github"></i>
           </a>
-          <a style={{backgroundColor:'transparent'}} href="#" id="linkedin-btn">
+          <a style={{backgroundColor:'transparent'}} target='_blank' href="https://www.linkedin.com/in/madhu-damodhar/" id="linkedin-btn">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a style={{backgroundColor:'transparent'}} href="#" id="instagram-btn">
+          <a style={{backgroundColor:'transparent'}} target='_blank' href="https://www.instagram.com/damodhar_gari_abbai/" id="instagram-btn">
             <i className="fab fa-instagram"></i>
           </a>
-          <a style={{backgroundColor:'transparent'}} href="#" id="twitter-btn">
+          <a style={{backgroundColor:'transparent'}} target='_blank' href="https://twitter.com/Madhu_Damodhar" id="twitter-btn">
             <i className="fab fa-twitter"></i>
           </a>
         </div>
@@ -728,7 +736,7 @@ function App() {
           content="Open For Jobs and Internships. Hire Me 👍"
           place="top"
         />
-        <Tooltip anchorId="modeIcon" content="Light Mode" place="bottom" />
+        <Tooltip anchorId="modeIcon" content={ lightMode ? "Dark Mode Is On " : "Light Mode Is On " } place="bottom" />
        
       </div>
 
