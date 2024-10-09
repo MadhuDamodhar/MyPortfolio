@@ -1,0 +1,523 @@
+@media (max-width:1230px) {
+  .intro-container .hello{
+    font-size: 3rem;
+  }
+  .intro-container .profiletitle{
+    font-size: 2.5rem;
+  }
+  .intro-container .p{
+    font-size: 1.2rem;
+  }
+  .image-container .name{
+    font-size: 2rem;
+    text-align: center;
+  } 
+  .image-container #highlightRole{
+    font-size: .9rem;
+    text-align: center;
+  } 
+  .image-container #highlightRole1{
+    font-size: 1rem;
+
+  }
+  .AboutMe{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.122);
+  }
+  .AboutMe::-webkit-scrollbar{
+    display: none;
+  }
+  .AboutMe img{
+    border-radius: 20%;
+    height:450px;
+    min-width: 100%;
+   align-self: center;
+   margin-top: -50px;
+  }
+  .About-Container p{
+    font-size: 1.4rem;
+    padding-bottom: 50px;
+  }
+
+  .skills-edu .education{
+    font-size: 1rem;
+    line-height: .85;
+  }
+  .skills-edu .skills{
+    font-size: 1rem;
+    line-height: .85;
+   
+  }
+ #skillsheading{
+  margin-bottom: 10px;
+ } 
+  .Certifications .json{
+    font-size: 1rem;
+    line-height: .9;
+  }
+}
+@media (max-width:1055px){
+
+  .intro-container .hello{
+    font-size: 2.5rem;
+  }
+  .intro-container .profiletitle{
+    font-size: 2rem;
+  }
+  .intro-container .p{
+    font-size: 1.1rem;
+  }
+  .image-container .name{
+    font-size: 2rem;
+    text-align: center;
+  } 
+  .image-container #highlightRole{
+    font-size: .7rem;
+    text-align: center;
+  } 
+  .image-container #highlightRole1{
+    font-size: .8rem;
+
+  }
+  #img{
+    border-radius: 20%;
+    height:400px;
+    min-width: 100%;
+   align-self: center;
+   margin-top: -50px;
+  }
+  .ProjectContainer{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  .ProjectContainer::-webkit-scrollbar{
+    display: none;
+  }
+  .ProjectContainer .projects{
+    flex-wrap: wrap;   
+   
+   }
+   .projects .project img{
+    min-width: 100%;
+    height: 50%;
+   }
+   .project{
+    height: 100%;
+    min-width: 300px;
+    flex: auto;
+   }
+
+   #contact{
+    padding: 0;
+    display: flex;
+    gap: 0px;
+   }
+   .contact .contact__img{
+    height: 300px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+@media (max-width:860px){
+
+  #wrapper .main-content{
+    flex-wrap: wrap;
+    overflow-y: scroll;
+   
+  }
+  .main-content::-webkit-scrollbar{
+    display: none;
+  }
+  #highlight{
+   
+    font-weight: 700;
+    font-size: .9rem;
+ 
+  }
+ 
+  .intro-container .hello{
+    font-size: 3rem;
+  }
+  .intro-container .profiletitle{
+    font-size: 2.5rem;
+  }
+  .intro-container .p{
+    font-size: 1.3rem;
+  }
+  .image-container .name{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10px;
+  } 
+  .image-container #highlightRole{
+    font-size: .7rem;
+    text-align: center;
+  } 
+  .image-container #highlightRole1{
+    font-size: .8rem;
+  }
+  .bottom button{
+    padding: 10px;
+    font-size: .5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.081);
+  }
+  .bottom i{
+    font-size: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .btn-text{
+    display: none;
+   
+  }
+  #contact{
+    padding: 0;
+    display: flex;
+    gap: 0px;
+   }
+   .contact .contact__img{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #contact .form {
+    gap: 20px;
+    min-width: 300px;
+    height: 300px;
+    padding: 20px;
+  }
+}
+@media (max-width:600px){
+  .intro-container .p{
+    font-size: 1.2rem;
+  }
+  .intro-container .hello{
+    font-size: 2.5rem;
+  }
+  .intro-container .profiletitle{
+    font-size: 2rem;
+  }
+  #AboutMe{
+    gap: 30px;
+
+  }
+ 
+  #AboutMe img{
+    height:350px;
+    min-width: 100%;
+    align-self: center;
+    margin-top: -50px;
+  }
+  .About-Container p{
+    font-size: 1.4rem;
+    padding-bottom: 50px;
+  }
+  .skills-edu{
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  gap: 0;
+  }
+  .skills-edu::-webkit-scrollbar{
+    display: none;
+  }
+  .skills-edu .education{
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .skills-edu .skills{
+    font-size: 1rem;
+    line-height: 1.2;
+   
+  }
+ #skillsheading{
+  margin-bottom: 10px;
+ } 
+
+}
+@media (max-width:685px){
+  #contact{
+   flex-wrap: wrap;
+   }
+   .contact .contact__img{
+    height: 180px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #contact .form .flex  input{
+    height: 45px;
+  }
+  #contact .form textarea{
+    height: 80px;
+  }
+ 
+}
+@media (max-width:500px){
+  #Base{
+    min-height: 70vh;
+  }
+ 
+  .nav .actionBtns{
+    gap: 5px;
+  }
+  .nav .toggle{
+    border-color: rgba(255, 255, 255, 0.193);
+  }
+  .nav .resume , i {
+    color: rgba(255, 255, 255, 0.603);
+   
+  }
+  .nav .resume {
+    width: 100px;
+    border-color:  rgba(255, 255, 255, 0.202);
+  }
+  .intro-container .p{
+    font-size: 1rem;
+  }
+  .intro-container .hello{
+    font-size: 2rem;
+  }
+  .intro-container .profiletitle{
+    font-size: 1.5rem;
+  }
+  #highlight{
+   
+    font-weight: 700;
+    font-size: .9rem;
+ 
+  }
+  #Certifications{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  #Certifications::-webkit-scrollbar{
+    display: none;
+  }
+    .Certifications .json {
+      line-height: 1;
+      font-size: 1rem;
+      
+    }
+}
+@media (max-width:450px){
+  #Base{
+    min-height: 70vh;
+  }
+ .nav .brand{
+  font-size: 2rem;
+
+ }
+  .nav .actionBtns{
+    gap: 5px;
+  }
+  .nav .toggle{
+    border-color: rgba(255, 255, 255, 0.193);
+  }
+   #wrapper #icons i{
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+  }
+  .nav .resume {
+    width: 100px;
+    border-color:  rgba(255, 255, 255, 0.202);
+    color: rgb(255, 255, 255);
+   
+  }
+  #wrapper{
+    min-width: 100%;
+  }
+  #wrapper .main-content .hireme{
+    width: 100px;
+    border-color:  rgba(255, 255, 255, 0.202);
+    color: rgb(255, 255, 255);
+  }
+  #wrapper .main-content{
+    height: 60vh;
+    min-width: 95%;
+  margin-top: -100px;
+  }
+ #wrapper .main-content .image-container{
+  min-width: 95%;
+ }
+ #wrapper .main-content .image-container img{
+  min-width: 95%;
+  margin-top: -10px;
+ }
+ .intro-container{
+  margin-top: -60px;
+ }
+  .intro-container .p{
+    font-size: 1rem;
+  }
+  .intro-container .hello{
+    font-size: 2rem;
+  }
+  .main-content .name{
+    font-size: 1.5rem;
+    color: white;
+   -webkit-text-stroke: .6px rgb(250, 70, 70);
+  }
+  .main-content #highlightRole{
+    color: white;
+   -webkit-text-stroke: 1px rgb(255, 255, 255);
+  }
+  #highlightRole1{
+   -webkit-text-stroke: 1px rgba(176, 36, 36, 0.861);
+  }
+ 
+  #highlight{
+    font-weight: 700;
+    font-size: .8rem;
+  }
+ 
+#wrapper #icons{
+    min-height: 60vh;
+    margin-top: -100px;
+    background-color: rgb(255, 255, 255);
+    min-width: 5vw;
+  }
+  #AboutMe{
+    gap: 30px;
+    height: 60vh;
+    margin-top: -100px;
+    min-width: 95%;
+  }
+ 
+  #AboutMe img{
+    height:300px;
+    min-width: 100%;
+    align-self: center;
+    margin-top: -20px;
+  }
+  .About-Container p{
+    font-size: 1.2rem;
+    padding-bottom: 50px;
+  }
+  #AboutMe .aboutName{
+    font-size: 1.5rem;
+    color: white;
+   -webkit-text-stroke: .6px rgb(250, 70, 70);
+  }
+  #AboutMe .aboutMetitle{
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  #thankyou {
+    font-size: .9rem;
+  }
+
+#bottom{
+  border: 1px solid rgba(255, 0, 0, 0);
+  gap: 15px;
+  margin-top: -100px;
+  height: 13vh;
+}
+#skills-edu{
+  height: 60vh;
+  margin-top: -100px;
+  min-width: 95%;
+  }
+  .skills-edu .education{
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 150px;
+  }
+  .skills-edu .skills{
+    font-size: 1rem;
+    line-height: 1.2;
+   
+  }
+ #skillsheading{
+  margin-bottom: 10px;
+ } 
+
+ #Certifications{
+  height: 60vh;
+   margin-top: -100px;
+   min-width: 95%;
+}
+#Certifications::-webkit-scrollbar{
+  display: none;
+}
+  .Certifications .json {
+    line-height: 1;
+    font-size: 1rem;
+    
+  }
+
+#ProjectContainer{
+   height: 60vh;
+   margin-top: -100px;
+   min-width: 95%;
+}
+#ProjectContainer .projectTitle{
+  margin-top: -5px;
+}
+#ProjectContainer .projects{
+  margin-top: -2px;
+}
+#ProjectContainer .view{
+  border: 1px solid rgba(255, 255, 255, 0.231);
+  color: black;
+}
+
+#bottom button{
+  font-size: 1rem;
+  height: 40px;
+  width: 10%;
+  border: 1px solid rgba(255, 255, 255, 0.231);
+  color: black;
+}
+
+  #contact{
+   flex-wrap: wrap;
+   height: 60vh;
+   margin-top: -100px;
+   min-width: 95%;
+   }
+
+   .contact .contact__img{
+    height: 120px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #contact .title{
+    font-size: 1.2rem;
+  }
+  #contact .submit{
+    height: 40px;
+    font-size:.7rem;
+    border-color: rgba(255, 255, 255, 0.191);
+  }
+  #contact .form .flex  input{
+    height: 40px;
+  }
+  #contact .form textarea{
+    height: 60px;
+  }
+  #contact .form {
+    gap: 10px;
+    min-width: 300px;
+    height: 300px;
+    padding: 20px;
+  }
+  
+}
