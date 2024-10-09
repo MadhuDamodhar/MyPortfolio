@@ -177,9 +177,10 @@ height: 75vh;
     align-items: center;
     flex-direction: column;
     min-width: 50%;
-    height: 75vh;
+    height: 74vh;
     padding: 10px;
     gap: 5px;
+   
   
   }
   .intro-container p{

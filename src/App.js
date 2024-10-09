@@ -729,7 +729,7 @@ function App() {
           place="top"
         />
         <Tooltip anchorId="modeIcon" content="Light Mode" place="bottom" />
-        <Tooltip anchorId="resume" content="Download Resume ↓" place="left" />
+       
       </div>
 
       <div id='bottom' className="bottom">

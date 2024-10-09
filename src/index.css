@@ -231,6 +231,7 @@
   overflow-y: scroll;
   scroll-behavior: smooth;
   gap: 0;
+ 
   }
   .skills-edu::-webkit-scrollbar{
     display: none;
@@ -238,11 +239,11 @@
   .skills-edu .education{
     font-size: 1rem;
     line-height: 1.2;
+   
   }
   .skills-edu .skills{
     font-size: 1rem;
     line-height: 1.2;
-   
   }
  #skillsheading{
   margin-bottom: 10px;
@@ -348,9 +349,9 @@
     color: rgb(255, 255, 255);
   }
   #wrapper .main-content{
-    height: 60vh;
-    min-width: 95%;
-  margin-top: -100px;
+    height: 65vh;
+  margin-top: -80px;
+  min-width: 95%;
   }
  #wrapper .main-content .image-container{
   min-width: 95%;
@@ -387,15 +388,15 @@
   }
  
 #wrapper #icons{
-    min-height: 60vh;
-    margin-top: -100px;
+    min-height: 65vh;
+    margin-top: -80px;
     background-color: rgb(255, 255, 255);
     min-width: 5vw;
   }
   #AboutMe{
     gap: 30px;
-    height: 60vh;
-    margin-top: -100px;
+    height: 65vh;
+  margin-top: -80px;
     min-width: 95%;
   }
  
@@ -425,12 +426,13 @@
 #bottom{
   border: 1px solid rgba(255, 0, 0, 0);
   gap: 15px;
-  margin-top: -100px;
-  height: 13vh;
+  margin-top: -70px;
+  height: 10vh;
+ 
 }
 #skills-edu{
-  height: 60vh;
-  margin-top: -100px;
+  height: 65vh;
+  margin-top: -80px;
   min-width: 95%;
   }
   .skills-edu .education{
@@ -448,8 +450,8 @@
  } 
 
  #Certifications{
-  height: 60vh;
-   margin-top: -100px;
+  height: 65vh;
+  margin-top: -80px;
    min-width: 95%;
 }
 #Certifications::-webkit-scrollbar{
@@ -462,8 +464,8 @@
   }
 
 #ProjectContainer{
-   height: 60vh;
-   margin-top: -100px;
+  height: 65vh;
+  margin-top: -80px;
    min-width: 95%;
 }
 #ProjectContainer .projectTitle{
@@ -483,21 +485,23 @@
   width: 10%;
   border: 1px solid rgba(255, 255, 255, 0.231);
   color: black;
+  padding-left: 12px;
 }
 
   #contact{
    flex-wrap: wrap;
-   height: 60vh;
-   margin-top: -100px;
+   height: 65vh;
+  margin-top: -80px;
    min-width: 95%;
    }
 
    .contact .contact__img{
-    height: 120px;
+    height: 140px;
     width: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: -45px;
   }
   #contact .title{
     font-size: 1.2rem;
@@ -518,6 +522,85 @@
     min-width: 300px;
     height: 300px;
     padding: 20px;
+    margin-bottom: -45px;
   }
   
 }
+@media (max-width:360px){
+  
+  #wrapper .main-content{
+    height: 70vh;
+    min-width: 95%;
+  margin-top: -35px;
+  }
+
+ .intro-container{
+  margin-top: -30px;
+ }
+ .intro-container .hireme{
+  min-height: 40px;
+  margin-bottom: 20px;
+ }
+#wrapper #icons{
+  min-height: 70vh;
+  margin-top: -35px;
+    background-color: rgb(255, 255, 255);
+    min-width: 5vw;
+  }
+  #AboutMe{
+    gap: 30px;
+    min-height: 70vh;
+    margin-top: -35px;
+    min-width: 95%;
+  }
+ 
+  #AboutMe img{
+    height:250px;
+  }
+
+#skills-edu{
+  min-height: 70vh;
+  margin-top: -35px;
+  }
+
+ #Certifications{
+  min-height: 70vh;
+  margin-top: -35px;
+   min-width: 95%;
+}
+
+#ProjectContainer{
+  min-height: 70vh;
+  margin-top: -35px;
+}
+#bottom{
+  border: 1px solid rgba(255, 0, 0, 0);
+  gap: 15px;
+  margin-top: -20px;
+  height: 10vh;
+ 
+}
+#bottom button{
+  font-size: 1rem;
+  height: 40px;
+  width: 10%;
+  border: 1px solid rgba(255, 255, 255, 0.231);
+  color: black;
+  padding-left: 12px;
+}
+
+  #contact{
+    min-height: 70vh;
+    margin-top: -35px;
+   }
+
+   .contact .contact__img{
+    height: 150px;
+    margin-bottom: -50px;
+  }
+  #contact .form {
+    margin-bottom: -50px;
+  }
+
+}
+
