@@ -8,7 +8,7 @@
   --IColor: rgba(255, 255, 255, 0.689);
   --IConColor:  rgba(0, 0, 0, 0.689);
   --contactTitle: rgb(228, 20, 20);
-  --active-bg-color: #000000f9;
+  --active-bg-color: #fcfcfcf9;
 }
 .light{
   
@@ -21,7 +21,7 @@
   --IColor: rgba(0, 0, 0, 0.689);
   --IConColor:  rgba(255, 255, 255, 0.689);
   --contactTitle: rgb(228, 20, 20);
-  --active-bg-color: #d8ababb5;
+  --active-bg-color: #000000b5;
 }
 
 *{
@@ -304,10 +304,10 @@ cursor: pointer;
   justify-content: center;
   transition: all .1s ;
   color: var(--light);
-  background-color: var(--active-bg-color);
+  /* background-color: var(--active-bg-color); */
   border-color:  #00808000;
   cursor: pointer;
-  
+  box-shadow: inset 2px 2px 10px var(--active-bg-color);
   }
  
   .bottom button:hover{
