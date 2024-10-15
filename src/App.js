@@ -19,7 +19,7 @@ import resume from './assets/Madhu.resume.pdf'
 import { Tooltip } from 'react-tooltip';
 
 function App() {
-  const [count , setCount]=useState(7);
+  const [count , setCount]=useState(0);
   const [formData, setFormData] = useState({
     to_name: "",
     from_name: "",
@@ -874,7 +874,10 @@ This application simplifies complex administrative tasks by allowing HR personne
           }}
         >
           <i style={{backgroundColor:'transparent'}} class="fas fa-medal"></i>
-          &nbsp; <span style={{backgroundColor:'transparent'}} className="btn-text">certifications</span>
+          &nbsp; <span  className="btn-text">
+          certifications
+        </span>
+        
         </button>
 
 
