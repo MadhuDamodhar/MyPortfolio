@@ -4,8 +4,14 @@ import './index.css'
 import profile from './assets/hero.png';
 import aboutPic from './assets/about-pic.png'
 import eshop from './assets/eshop.png'
-import ems from './assets/ems.png'
-import todo from './assets/todoApp.png'
+import emspic from './assets/ems.png'
+import docker from './assets/docker.png'
+import ems from './assets/ems.gif'
+import emsVideo from './assets/ems.mp4'
+import todo from './assets/todoapp.gif'
+import tododocker from './assets/todo-docker.png'
+import todoimg from './assets/todoapp.png'
+import todoappVideo from './assets/todoapp.mp4'
 import callWaiting from './assets/callwaiting.svg'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import emailjs from "emailjs-com";
@@ -13,7 +19,7 @@ import resume from './assets/Madhu.resume.pdf'
 import { Tooltip } from 'react-tooltip';
 
 function App() {
-  const [count , setCount]=useState(0);
+  const [count , setCount]=useState(7);
   const [formData, setFormData] = useState({
     to_name: "",
     from_name: "",
@@ -593,7 +599,11 @@ function App() {
                     data, focusing on efficient management of employee details
                     without any authentication requirements.
                   </p>
-                  <button className="view">
+                  <button
+                  onClick={() => {
+                    setCount(6);
+                  }}
+                  className="view">
                     <a style={{ textDecoration: "none" }} href="#">
                       view
                     </a>
@@ -621,7 +631,7 @@ function App() {
                     <span className="highlightthankyou">Spring Boot</span> for
                     the backend.
                   </p>
-                  <button className="view">
+                  <button onClick={()=>{setCount(7)}} className="view">
                     <a style={{ textDecoration: "none" }} href="#">
                       view
                     </a>
@@ -694,7 +704,93 @@ function App() {
             </div>
           </div>
         )}
+        {
+          count === 6 && (
+            <div className='ems-container'>
+            <div className='ems-header'>
+            <h2>Employee Management System </h2>
+            <span>Project Link:&nbsp;<a style={{textDecoration:'underline',color:'red'}} href='#'>http://localhost:9090</a></span>
+            </div>
+            <div className='summary'>
+            <img  src={emspic}></img>
+            <p className='s-para'>
+            <h4>Summary</h4>
+            The Employee Management System (EMS) is a full-featured web application designed to make the management of employee data more efficient and streamlined. It is built using modern technologies like React.js on the frontend and Spring Boot on the backend, ensuring a dynamic and responsive user interface, as well as secure and scalable backend services.
 
+This application simplifies complex administrative tasks by allowing HR personnel or administrators to add, update, delete, and search for employees quickly, ensuring effective workforce management. The employee records are stored in a MySQL database, offering a secure and reliable method of data persistence, while Docker is used for seamless deployment across various environments.
+            </p>
+            </div>
+            <div className='functionalities'>
+            <video autoPlay loop muted  >
+            <source src={emsVideo} type="video/mp4"/>
+            </video>
+           <p className='f-para'>
+           <h4>Employee CRUD Operations</h4>
+           <span className='heading'>Add Employee : </span><span>The application allows users to add new employee records, including details such as employee ID, name, department, role, salary, etc.</span><br/>
+           <span className='heading'>Update Records : </span><span> Users can easily modify existing employee data through the edit functionality.</span><br/>
+           <span className='heading'>View Employees : </span><span>A list of employees can be viewed in a clean and organized layout with relevant details displayed.</span><br/>
+           <span className='heading'>Delete Employees : </span><span>Unnecessary or outdated employee records can be removed from the system effortlessly.</span><br/>
+           <span className='heading'>Search & Filter : </span><span>Users can search for employees by specific attributes like name, department, or job title.</span>
+           </p>
+            </div> 
+            <div className='backend'>
+           <img src={docker}></img>
+           <p className='b-para'>
+           <h4>Backend Services</h4>
+           <span className='heading'>RESTful API Architecture : </span><span>The backend follows REST standards for API communication between the client (frontend) and the server.</span><br/>
+           <span className='heading'>MySQL Integration : </span><span> All employee data is stored in a MySQL database, ensuring data persistence and easy retrieval.</span><br/>
+           <span className='heading'>Docker-ized Database : </span><span>  The system utilizes Docker containers to encapsulate and manage the MySQL database, ensuring easy deployment and scaling.
+           </span><br/>
+           <span className='heading'>Docker Containers : </span><span>Both the backend (Spring Boot) and MySQL database are containerized using Docker, simplifying the deployment process across different environments.</span><br/>
+           <span className='heading'>Hosted on AWS EC2 : </span><span>The backend is hosted on Amazon EC2, ensuring high availability and scalability. This setup allows remote access to the system for management and maintenance.</span><br/>
+           </p>
+            </div>             
+            </div>
+          )
+        }
+
+        {
+          count === 7 && (
+            <div className='ems-container'>
+            <div className='ems-header'>
+            <h2>Task Master </h2>
+            <span>Project Link:&nbsp;<a style={{textDecoration:'underline',color:'red'}} href='#'>http://localhost:9090</a></span>
+            </div>
+            <div className='summary'>
+            <img  src={todoimg}></img>
+            <p className='s-para'>
+            <h4>Summary</h4>
+            The Task Master Application is a full-stack project designed to simplify task management. Built with React.js on the frontend and Spring Boot on the backend, it offers a seamless experience for users to create, edit, and manage their daily tasks. Users can add new tasks, update details, mark tasks as completed, or delete them as needed. Tasks are stored securely in a MySQL database, ensuring persistence across sessions. The app features a responsive UI, making it accessible on both desktops and mobile devices. With RESTful APIs handling CRUD operations, it allows real-time updates to tasks without refreshing the page. The backend is containerized using Docker, making the app easily deployable and scalable. Overall, the Task Master app is a practical solution for organizing personal or professional tasks efficiently.
+            </p>
+            </div>
+            <div className='functionalities'>
+            <video autoPlay loop muted  >
+            <source src={todoappVideo} type="video/mp4"/>
+            </video>
+           <p className='f-para'>
+           <h4>Key Features :</h4>
+           <span className='heading'>Task Creation : </span><span>Users can create new tasks by entering a task description and optional due date. Each task is added to the list of pending tasks.</span><br/>
+           <span className='heading'>Task Viewing and Tracking : </span><span> All tasks are displayed in a neatly structured list, categorized as "Pending" or "Completed" for easy tracking.</span><br/>
+           <span className='heading'>Marking Tasks as Completed : </span><span>Users can mark tasks as completed when finished. Completed tasks are moved to a separate section, but remain visible for record-keeping.</span><br/>
+           <span className='heading'>Task Editing and Updating : </span><span>If a task’s details need changes, users can edit the description or due date, allowing for flexible task management.</span><br/>
+           <span className='heading'>Task Deletion: </span><span>Users can delete tasks they no longer want to keep, helping to maintain a clean and clutter-free list of tasks.</span>
+           </p>
+            </div> 
+            <div className='backend'>
+           <img src={tododocker}></img>
+           <p className='b-para'>
+           <h4>Backend Services</h4>
+           <span className='heading'>MySQL Database Integration : </span><span>The application stores tasks in a MySQL database, ensuring data persistence. Tasks are securely stored and retrieved through the backend.</span><br/>
+           <span className='heading'>Backend RESTful APIs : </span><span>The Spring Boot backend exposes RESTful APIs for handling CRUD operations (Create, Read, Update, Delete). The API layer ensures efficient communication between the frontend and database.</span><br/>
+           <span className='heading'>Docker-ized Database : </span><span>  The system utilizes Docker containers to encapsulate and manage the MySQL database, ensuring easy deployment and scaling.
+           </span><br/>
+           <span className='heading'>Docker Containers : </span><span>Both the backend (Spring Boot) and MySQL database are containerized using Docker, simplifying the deployment process across different environments.</span><br/>
+           <span className='heading'>Hosted on AWS EC2 : </span><span>The backend is hosted on Amazon EC2, ensuring high availability and scalability. This setup allows remote access to the system for management and maintenance.</span><br/>
+           </p>
+            </div>             
+            </div>
+          )
+        }
         <div id='icons' className="icons">
           <a style={{backgroundColor:'transparent'}}  href="#" id="facebook-btn" >
             <i style={{backgroundColor:'transparent'}} className="fab fa-facebook"></i>
@@ -741,54 +837,64 @@ function App() {
       </div>
 
       <div id='bottom' className="bottom">
-        <button
+        <button className={count===0?"active":""}
           onClick={() => {
             setCount(0);
           }}
         >
-          <i class="fas fa-home"></i>
-          &nbsp;<span className="btn-text">Home</span>
+        <i style={{backgroundColor:'transparent'}} className="fas fa-home"></i>
+          &nbsp;<span style={{backgroundColor:'transparent'}} className="btn-text">Home</span>
         </button>
-        <button
+
+
+        <button className={count===1?"active":""}
           onClick={() => {
             setCount(1);
           }}
         >
           {" "}
-          <i class="fas fa-user"></i>
-          &nbsp;<span className="btn-text">About Me</span>
+          <i style={{backgroundColor:'transparent'}} class="fas fa-user"></i>
+          &nbsp;<span style={{backgroundColor:'transparent'}} className="btn-text">About Me</span>
         </button>
-        <button
+
+
+        <button className={count===2?"active":""}
           onClick={() => {
             setCount(2);
           }}
         >
-          <i class="fas fa-tools"></i>
-          &nbsp;<span className="btn-text">Skills/Edu</span>
+        <i style={{backgroundColor:'transparent'}} class="fas fa-tools"></i>
+          &nbsp;<span  style={{backgroundColor:'transparent'}} className="btn-text">Skills/Edu</span>
         </button>
-        <button
+
+
+        <button className={count===3?"active":""}
           onClick={() => {
             setCount(3);
           }}
         >
-          <i class="fas fa-medal"></i>
-          &nbsp; <span className="btn-text">certifications</span>
+          <i style={{backgroundColor:'transparent'}} class="fas fa-medal"></i>
+          &nbsp; <span style={{backgroundColor:'transparent'}} className="btn-text">certifications</span>
         </button>
-        <button
+
+
+        <button className={count===4 || count===6 || count===7 ? "active":""}
           onClick={() => {
             setCount(4);
           }}
         >
-          <i class="fas fa-project-diagram"></i>
-          &nbsp; <span className="btn-text">Projects</span>
+          <i style={{backgroundColor:'transparent'}} class="fas fa-project-diagram"></i>
+          &nbsp; <span style={{backgroundColor:'transparent'}} className="btn-text">Projects</span>
         </button>
-        <button
+
+
+        <button className={count===5 ?"active":""}
           onClick={() => {
             setCount(5);
           }}
         >
-          <i class="fas fa-envelope"></i>
-          &nbsp;<span className="btn-text">Contact</span>
+          <i style={{backgroundColor:'transparent'}} class="fas fa-envelope"></i>
+          &nbsp;<span style={{backgroundColor:'transparent'}} className="btn-text">Contact</span>
         </button>
       </div>
     </div>
