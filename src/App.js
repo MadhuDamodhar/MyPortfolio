@@ -90,7 +90,7 @@ function App() {
                 Madhu Damodhar
                 <br />
                 <span id="highlightRole">
-                  void <span id="highlightRole1">role</span>&nbsp;( &nbsp; ) &nbsp; &#123;
+                  void <span id="highlightRole">role</span>&nbsp;( &nbsp; ) &nbsp; &#123;
                   <br />
                   &nbsp;&nbsp;System.out.println ( &nbsp; " &nbsp;
                   <span id="highlightRole1">Full-Satck Developer</span> 🖥️  " &nbsp; );
