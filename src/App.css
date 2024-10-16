@@ -701,8 +701,6 @@ padding: 10px;
 .summary{
  display: flex;
  flex-direction: row;
-
-
 }
 .summary img{
   width: 40%;
@@ -740,7 +738,7 @@ padding: 10px;
   -webkit-text-stroke: .01px rgb(250, 70, 70);
 }
 .heading{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: justify;
   font-weight: 100px;
   line-height:1.1;

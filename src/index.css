@@ -125,7 +125,61 @@
     align-items: center;
     justify-content: center;
   }
+  #summary img{
+    object-fit: contain;
+  }
+  #summary .s-para{
+    font-size: 1.1rem;
+      line-height:1;
+  }
+  #functionalities video{
+    width: 40%;
+    height: 100%; 
+    object-fit: contain;
+  }
+  #functionalities .f-para{
+    font-size: 1.1rem;
+      line-height:1;
+  }
+  #heading{
+    font-size: 1.1rem;
+    line-height:1.1;
+  }
+  #backend img{
+    object-fit: contain;
+  }
+  #backend .b-para{
+    font-size: 1.1rem;
+    line-height:1;
+  }
 
+#summary1 img{
+  object-fit: contain;
+}
+#summary1 .s-para{
+  font-size: 1.1rem;
+    line-height:1;
+}
+#functionalities1 video{
+  width: 40%;
+  height: 100%; 
+  object-fit: contain;
+}
+#functionalities1 .f-para{
+  font-size: 1.1rem;
+    line-height:1;
+}
+#heading1{
+  font-size: 1.1rem;
+  line-height:1.1;
+}
+#backend1 img{
+  object-fit: contain;
+}
+#backend1 .b-para{
+  font-size: 1.1rem;
+  line-height:1;
+}
 }
 @media (max-width:860px){
 
@@ -204,6 +258,175 @@
     min-height: 40px;
     margin-bottom: 20px;
    }
+  
+  #summary .s-para{
+    font-size: 1rem;
+      line-height:1;
+  }
+  #functionalities .f-para{
+    font-size: 1rem;
+      line-height:1;
+  }
+  #heading{
+    font-size: .9rem;
+    line-height:1;
+  }
+
+  /* #backend{
+    flex-wrap: wrap;
+  } */
+
+  #backend .b-para{
+    font-size: .9rem;
+    line-height:1;
+  }
+  #summary1 .s-para{
+    font-size: 1rem;
+      line-height:1;
+  }
+  #functionalities1 .f-para{
+    font-size: 1rem;
+      line-height:1;
+  }
+  #heading1{
+    font-size: .9rem;
+    line-height:1;
+  }
+
+  /* #backend{
+    flex-wrap: wrap;
+  } */
+
+  #backend1 .b-para{
+    font-size: .9rem;
+    line-height:1;
+  }
+
+}
+@media (max-width:700px){
+  #ems-header{
+    font-size: .8rem;
+  }
+  #summary{
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+padding-top: 100px;
+  }
+  #summary img{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -130px;
+  }
+  #summary .s-para{
+    font-size: 1rem;
+      line-height:1.1;
+      height: 100%;
+  }
+  #functionalities{
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+   
+  }
+  #functionalities video{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -100px;
+  }
+  #functionalities .f-para{
+    font-size: 1rem;
+    line-height:1.1;
+    height: 100%;
+    padding: 5px;
+  }
+  #heading{
+    font-size: .9rem;
+    line-height:1;
+  }
+
+  #backend{
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+    
+  }
+  #backend img{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -100px;
+  }
+  #backend .b-para{
+    font-size: .9rem;
+    line-height:1.1;
+  }
+  #ems-header1{
+    font-size: .8rem;
+  }
+  #ems-header1 h2{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.178);
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  #ems-header1 span{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+    width: 100%;
+    margin-top: 6px;
+    padding-bottom: 15px;
+  }
+  #summary1{
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+padding-top: 100px;
+  }
+  #summary1 img{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -130px;
+  }
+  #summary1 .s-para{
+    font-size: 1rem;
+      line-height:1.1;
+      height: 100%;
+  }
+  #functionalities1{
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+   
+  }
+  #functionalities1 video{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -100px;
+  }
+  #functionalities1 .f-para{
+    font-size: 1rem;
+    line-height:1.1;
+    height: 100%;
+    padding: 5px;
+  }
+  #heading1{
+    font-size: .9rem;
+    line-height:1;
+  }
+
+  #backend1{
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+    
+  }
+  #backend1 img{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -100px;
+  }
+  #backend1 .b-para{
+    font-size: .9rem;
+    line-height:1.1;
+  }
 }
 @media (max-width:600px){
   .intro-container .p{
@@ -253,6 +476,49 @@
   margin-bottom: 10px;
  } 
 
+ #ems-header1{
+  font-size: .8rem;
+  border-bottom:none ;
+}
+#summary1{
+  flex-wrap: wrap;
+  margin-bottom:230px;
+  padding-bottom: 50px;
+padding-top: 150px;
+}
+#summary1 img{
+  width: 100%;
+  object-fit: contain;
+  margin-top: -160px;
+}
+#summary1 .s-para{
+  font-size: 1rem;
+    line-height:1.1;
+    height: 100%;
+}
+#functionalities1{
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+  padding-bottom: 50px;
+
+}
+#functionalities1 video{
+  width: 100%;
+  object-fit: contain;
+  margin-top: -160px;
+}
+#functionalities1 .f-para{
+  font-size: 1rem;
+  line-height:1.1;
+  height: 100%;
+  padding: 5px;
+}
+#heading1{
+  font-size: .9rem;
+  line-height:1;
+}
+
+
 }
 @media (max-width:685px){
   #contact{
@@ -275,6 +541,11 @@
     min-height: 40px;
     margin-bottom: 20px;
    }
+   #functionalities1{
+    margin-bottom: 160px;
+  }
+ 
+
 }
 @media (max-width:500px){
   #Base{
@@ -320,6 +591,61 @@
       min-height: 40px;
       margin-bottom: 20px;
      }
+ 
+     #ems-header1{
+  font-size: .8rem;
+  border-bottom:none ;
+  margin-bottom: 10px;
+}
+#ems-header1 h2{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.178);
+  width: 100%;
+  padding-bottom: 15px;
+}
+#ems-header1 span{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+  width: 100%;
+  margin-top: 6px;
+  padding-bottom: 15px;
+}
+#summary1{
+  flex-wrap: wrap;
+  margin-bottom:230px;
+  padding-bottom: 50px;
+padding-top: 220px;
+}
+#summary1 img{
+  width: 100%;
+  object-fit: contain;
+  margin-top: -260px;
+}
+
+
+#functionalities1 video{
+  width: 100%;
+  object-fit: contain;
+  margin-top: -200px;
+}
+#backend1{
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+  padding-bottom: 50px;
+  
+}
+#backend1 img{
+  width: 100%;
+  object-fit: contain;
+  margin-top: -120px;
+}
+#backend1 .b-para{
+  font-size: .9rem;
+  line-height:1.1;
+}
+#heading1{
+  font-size: .9rem;
+  line-height:1;
+}
+
 }
 @media (max-width:450px){
   #Base{
@@ -339,6 +665,7 @@
   .nav .resume {
     width: 100px;
   }
+  
   #wrapper{
     min-width: 100%;
   }
@@ -355,7 +682,7 @@
  }
  #wrapper .main-content .image-container img{
   min-width: 95%;
-  margin-top: -10px;
+  margin-top: -25px;
  }
  .intro-container{
   margin-top: -60px;
@@ -376,8 +703,9 @@
     color: white;
    -webkit-text-stroke: 1px rgb(255, 255, 255);
   }
-  #highlightRole1{
+  .main-content #highlightRole1{
    -webkit-text-stroke: 1px rgba(176, 36, 36, 0.861);
+   font-size: 1rem;
   }
  
   #highlight{
@@ -519,7 +847,206 @@
     padding: 20px;
     margin-bottom: -45px;
   }
+  #ems-container{
+    height: 65vh;
+    margin-top: -80px;
+    min-width: 95%;
+  }
+  #ems-header{
+    width: 100%;
+    min-height: 20%;
+    padding-bottom: 80px;
+  }
+  #ems-header h2{
+    -webkit-text-stroke: 1px rgb(250, 70, 70);
+    font-size: .9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.142);
+    padding-bottom: 3px;
+  }
+  #ems-header span{
+    font-size: .7rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.142);
+    padding-bottom: 3px;
+    margin-top:8px;
+  }
+  #summary{
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    min-height: 100%;
+  }
+  #summary img{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -220px;
+   height: 200px;
+  }
+  #summary #s-para{
+    font-size: 1.1rem;
+      line-height:1.1;
+      height: 100%;
+      padding-right: 5px;
+      margin-top: -20px;
+  }
+  #functionalities{
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+    min-height: 100%;
+  }
+  #functionalities video{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -100px;
+    height: 200px;
+  }
+  #functionalities .f-para{
+    font-size: 1.1rem;
+    line-height:1.1;
+    height: 100%;
+    padding: 5px;
+    margin-top: 25px;
+  }
+  #heading{
+    font-size: .9rem;
+    line-height:1;
+  }
+
+  #backend{
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+    min-height: 40vh;
+  }
+  #backend img{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -200px;
+    height: 200px;
+  }
+  #backend .b-para{
+    font-size: 1.1rem;
+    line-height:1.1;
+    margin-top: 40px;
+    padding-right: 5px;
+  }
   
+  #ems-container1{
+    height: 65vh;
+    margin-top: -80px;
+    min-width: 95%;
+  }
+  #ems-header1{
+    width: 100%;
+    min-height: 20%;
+    padding-bottom: 80px;
+  }
+  #ems-header1 h2{
+    -webkit-text-stroke: 1px rgb(250, 70, 70);
+    font-size: .9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.142);
+    padding-bottom: 3px;
+  }
+  #ems-header1 span{
+    font-size: .7rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.142);
+    padding-bottom: 3px;
+    margin-top:4px;
+  }
+  #summary1{
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    min-height: 100%;
+  }
+  #summary1 img{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -220px;
+   height: 200px;
+  }
+  #summary1 #s-para{
+    font-size: 1.1rem;
+      line-height:1.1;
+      height: 100%;
+      padding-right: 5px;
+      margin-top: -10px;
+  }
+  #functionalities1{
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+    min-height: 100%;
+  }
+  #functionalities1 video{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -70px;
+    height: 200px;
+  }
+  #functionalities1 .f-para{
+    font-size: 1.1rem;
+    line-height:1.1;
+    height: 100%;
+    padding: 5px;
+    margin-top: 25px;
+  }
+  #heading1{
+    font-size: .9rem;
+    line-height:1;
+  }
+
+  #backend1{
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+    min-height: 40vh;
+  }
+  #backend1 img{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -90px;
+    height: 200px;
+  }
+  #backend .b-para{
+    font-size: 1.1rem;
+    line-height:1.1;
+    margin-top: 40px;
+    padding: 0px;
+  }
+  #functionalties .f-para{
+    font-size: 1.1rem;
+    line-height:1.1;
+    margin-top: 40px;
+    padding: 0px;
+  }
+  #summary .s-para{
+    font-size: 1.1rem;
+    line-height:1.1;
+    margin-top: 40px;
+    padding: 0px;
+  }
+  #backend1 .b-para{
+    font-size: 1.1rem;
+    line-height:1.1;
+    margin-top: 40px;
+    padding: 0px;
+  }
+  #functionalties1 .f-para{
+    font-size: 1.1rem;
+    line-height:1.1;
+    margin-top: 40px;
+    padding: 0px;
+  }
+  #summary1 .s-para{
+    font-size: 1.1rem;
+    line-height:1.1;
+    margin-top: 40px;
+    padding: 0px;
+  }
+
 }
 @media (max-width:360px){
   
@@ -594,6 +1121,95 @@
   }
   #contact .form {
     margin-bottom: -50px;
+  }
+  #ems-header h2{
+    -webkit-text-stroke: 1px rgb(250, 70, 70);
+    font-size: .9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.142);
+    padding-bottom: 3px;
+    margin-top:16px;
+  }
+  #ems-header span{
+    font-size: .7rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.142);
+    padding-bottom: 3px;
+    margin-top:22px;
+  }
+  #summary img{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -220px;
+   height: 200px;
+  }
+  #functionalities video{
+    width: 100%;
+    object-fit: contain;
+    margin-top: 0px;
+    height: 200px;
+  }
+  #functionalities #f-para{
+    font-size: 1.1rem;
+    line-height:1.1;
+    margin-top: 0px;
+    padding: 0px;
+  }
+  #backend img{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -45px;
+    height: 200px;
+  }
+  #backend .b-para{
+    padding-bottom: 20px;
+    margin-top: -0px;
+  }
+
+  #ems-header1 h2{
+    -webkit-text-stroke: 1px rgb(250, 70, 70);
+    font-size: .9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.142);
+    padding-bottom: 3px;
+    margin-top:16px;
+  }
+  #ems-header1 span{
+    font-size: .7rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.142);
+    padding-bottom: 3px;
+    margin-top:8px;
+  }
+  #summary1{
+    margin-bottom: 200px;
+  }
+  #summary1 #s-para{
+    margin-top: -40px;
+  }
+  #summary1 img{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -220px;
+   height: 200px;
+  }
+  #functionalities1 video{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -20px;
+    height: 200px;
+  }
+  #functionalities1 #f-para{
+    font-size: 1.1rem;
+    line-height:1.1;
+    margin-top: 10px;
+    padding: 0px;
+  }
+  #backend1 img{
+    width: 100%;
+    object-fit: contain;
+    margin-top: 10px;
+    height: 200px;
+  }
+  #backend1 .b-para{
+    padding-bottom: 20px;
+    margin-top: 10px;
   }
 
 }
