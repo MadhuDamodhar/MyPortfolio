@@ -341,7 +341,7 @@ cursor: pointer;
     height:450px;
     min-width: 500px;
     background-color: rgba(144, 143, 140, 0);
-  filter: drop-shadow(2px 2px 10px white);
+    filter: drop-shadow(2px 2px 10px var(--light));
   }
   .About-Container{
     height: 100%;
