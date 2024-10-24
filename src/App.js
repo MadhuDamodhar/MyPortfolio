@@ -3,7 +3,11 @@ import './App.css';
 import './index.css'
 import profile from './assets/hero.png';
 import aboutPic from './assets/about-pic.png'
-import eshop from './assets/eshop.png'
+import eshop from './assets/eshop-gif.gif'
+import eshopimage from './assets/eshop-image.png'
+import eshopVideo from './assets/eshop-video1.mp4'
+import eshopMobile from './assets/database-video.mp4'
+import eshopdocker from './assets/eshop-docker.png'
 import emspic from './assets/ems.png'
 import docker from './assets/docker.png'
 import ems from './assets/ems.gif'
@@ -574,7 +578,11 @@ function App() {
                     <span className="highlightthankyou">MYSQL</span> is used for
                     data storage.
                   </p>
-                  <button className="view">
+                  <button
+                  onClick={() => {
+                    setCount(8);
+                  }}
+                  className="view">
                     <a style={{ textDecoration: "none" }} href="#">
                       view
                     </a>
@@ -788,6 +796,63 @@ This application simplifies complex administrative tasks by allowing HR personne
            <span className='heading' id='heading1' >Hosted on AWS EC2 : </span><span>The backend is hosted on Amazon EC2, ensuring high availability and scalability. This setup allows remote access to the system for management and maintenance.</span><br/>
            </p>
             </div>             
+            </div>
+          )
+        }
+        {
+          count === 8 && (
+            <div id='ems-container' className='ems-container'>
+            <div id='ems-header' className='ems-header'>
+            <h2>Ecommerce Web Application  (  In Progress ) </h2>
+            <span>Project Link:&nbsp;<a style={{textDecoration:'underline',color:'red'}} href='#'>http://localhost:9090</a></span>
+            </div>
+            <div id='summary' className='summary'>
+            <img  src={eshopimage}></img>
+            <p id='s-para' className='s-para'>
+            <h4>Summary</h4>
+            Eshop.in is a comprehensive e-commerce platform built with React.js for a highly interactive, responsive user interface and Java Spring Boot for a scalable backend architecture. The platform allows users to browse products, manage shopping carts, and process orders effortlessly. It employs custom axios interceptors for secure API calls and integrates with a MySQL database to handle complex CRUD operations efficiently. The project also incorporates modern UI/UX practices for a smooth user experience. Deployed on Vercel and integrated with GitHub for continuous development, it showcases expertise in full-stack development, RESTful services, database integration, and API security. 
+            </p>
+            </div>
+            <div  id='functionalities' className='functionalities'>
+            <video autoPlay loop muted  >
+            <source src={eshopVideo} type="video/mp4"/>
+            </video>
+           <p id='f-para' className='f-para'>
+           <h4>Employee CRUD Operations</h4>
+           <span className='heading' id='heading' >Product Listing : </span><span>Displays products fetched from the backend, with filtering and sorting options.</span><br/>
+           <span className='heading' id='heading' >Product Details Page : </span><span> Detailed view of each product, including images, descriptions, and pricing.</span><br/>
+           <span className='heading' id='heading' >Shopping Cart : </span><span>Users can add, remove, and update product quantities, with real-time cart updates.</span><br/>
+           <span className='heading' id='heading' >Order Management : </span><span>Streamlined order placement process with validation checks for cart items and user information.</span><br/>
+           <span className='heading' id='heading' >API Integration : </span><span>Axios is used to handle all REST API calls, including secure requests with custom interceptors for authentication..</span>
+           
+           </p>
+            </div> 
+            <div id='backend' className='backend'>
+           <img src={eshopdocker}></img>
+           <p className='b-para'>
+           <h4>Backend Services</h4>
+           <span className='heading' id='heading' >RESTful API Architecture : </span><span>The The backend follows REST standards to facilitate seamless communication between the frontend and backend.</span><br/>
+           <span className='heading' id='heading' >MySQL Integration : </span><span>The application uses MySQL for efficient data management, handling CRUD operations for products, users, and orders.</span><br/>
+           <span className='heading' id='heading' >Dockerized Backend : </span><span>  Both the Spring Boot backend and MySQL database are containerized using Docker, simplifying deployment and ensuring scalability.
+           </span><br/>
+           <span className='heading' id='heading' >Containerized Environment : </span><span>The system is fully containerized, allowing easy deployment, management, and scaling across different environments.</span><br/>
+           <span className='heading' id='heading' >Hosted on AWS EC2 : </span><span>The backend is hosted on Amazon EC2, ensuring high availability and scalability. This setup allows remote access to the system for management and maintenance.</span><br/>
+           </p>
+            </div>  
+            <div id='functionalities' className='functionalities'>
+            <video id='ER-DAIGRAM' autoPlay loop muted  >
+            <source  src={eshopMobile} type="video/mp4"/>
+            </video>
+           <p id='f-para' className='f-para'>
+           <h4>ER (Entity-Relationship) Diagram </h4>
+           <span className='heading' id='heading' >Product Entity : </span><span>Represents all products available in the store, including attributes like product name, price, description, category, and stock quantity.</span><br/>
+           <span className='heading' id='heading' >User Entity : </span><span>Stores user details such as username, password, email, and roles (admin/customer) for authentication and authorization.</span><br/>
+           <span className='heading' id='heading' >Order Entity : </span><span>Manages all order details, including order ID, order date, and total price. It is linked to the User entity to track who placed the order.</span><br/>
+           <span className='heading' id='heading' >OrderItem Entity : </span><span>Represents individual items in an order, linking Orders with Products and capturing quantity, price, and subtotal for each item.</span><br/>
+           <span className='heading' id='heading' >ShoppingCart Entity : </span><span> Manages the user's cart, allowing products to be added, updated, or removed before placing an order.</span><br/>
+           <span className='heading' id='heading' >Relationships : </span><span> One-to-many relationships between Users and Orders, Orders and OrderItems, and Products and Categories for efficient data management and integrity. and Etc..</span>
+           </p>
+            </div>            
             </div>
           )
         }
