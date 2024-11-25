@@ -4,7 +4,7 @@ function Loader() {
   return (
     <div className="loading-part">   
   <div class="loader">
-  <p class="heading">Loading</p>
+  <p class="heading-loading">Loading</p>
   <div class="loading">
     <div class="load"></div>
     <div class="load"></div>

@@ -22,8 +22,10 @@ import emailjs from "emailjs-com";
 import resume from "./assets/Madhu.resume.pdf";
 import { Tooltip } from "react-tooltip";
 import Loader from "./Loader";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
+
   const [count, setCount] = useState(0);
   const [formData, setFormData] = useState({
     to_name: "",
@@ -36,7 +38,9 @@ function App() {
     console.log("light mode on");
     setLightMode(!lightMode);
   };
-
+  useEffect(()=>{
+    AOS.init();
+  },[count])
   const [statusMessage, setStatusMessage] = useState("");
 
   const handleChange = (e) => {
@@ -67,14 +71,14 @@ function App() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setReload((prevReload) => !prevReload);
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timeout);
   }, []);
   return (
     <>
       {reload ? (
-        <div id="Base" className="Base">
+        <div data-aos="fade-in"  data-aos-duration="2000" id="Base" className="Base">
           <div className="nav">
             <h2 id="brand" className="brand">
               M D
@@ -98,10 +102,11 @@ function App() {
             </div>
           </div>
 
-          <div id="wrapper" className="wrapper">
+          <div 
+           id="wrapper" className="wrapper">
             {count === 0 && (
-              <div className="main-content">
-                <div className="image-container">
+              <div  className="main-content">
+                <div data-aos="fade-out"  data-aos-duration="2000" className="image-container">
                   <img src={profile} alt="profilePic"></img>
                   <p className="name">
                     Madhu Damodhar
@@ -119,7 +124,7 @@ function App() {
                   </p>
                 </div>
 
-                <div id="intro-container" className="intro-container">
+                <div data-aos="fade-in"  data-aos-duration="2000" id="intro-container" className="intro-container">
                   <p className="p">
                     <span className="hello">
                       Hello , <br />
@@ -196,9 +201,9 @@ function App() {
               </div>
             )}
             {count === 1 && (
-              <div id="AboutMe" className="AboutMe">
-                <img id="img" src={aboutPic}></img>
-                <div className="About-Container">
+              <div  id="AboutMe" className="AboutMe">
+                <img data-aos="fade-out" data-aos-duration="2000"  id="img" src={aboutPic}></img>
+                <div data-aos="fade-in"  data-aos-duration="2000"  className="About-Container">
                   <p className="about-para">
                     <span className="aboutMe">
                       About Me <br />
@@ -304,8 +309,8 @@ function App() {
               </div>
             )}
             {count === 2 && (
-              <div id="skills-edu" className="skills-edu">
-                <div className="education">
+              <div  id="skills-edu" className="skills-edu">
+                <div data-aos="fade-out"  data-aos-duration="2000" className="education">
                   <h2 id="skillsheading" className="educationTitle">
                     {" "}
                     Education <i class="fas fa-graduation-cap"></i>
@@ -414,7 +419,7 @@ function App() {
                     .
                   </span>
                 </div>
-                <div className="skills">
+                <div data-aos="fade-out"  data-aos-duration="2000" className="skills">
                   <h2 id="skillsheading" className="skillsTitle">
                     {" "}
                     Skills <i class="fas fa-tools"></i>
@@ -556,8 +561,8 @@ function App() {
               </div>
             )}
             {count === 3 && (
-              <div id="Certifications" className="Certifications">
-                <span className="json">
+              <div  id="Certifications" className="Certifications">
+                <span data-aos="fade-out"  data-aos-duration="2000" className="json">
                   <br />
                   &nbsp;&nbsp;&nbsp;&nbsp;
                   <span className="highlightthankyou">&#123;</span> <br />{" "}
@@ -674,9 +679,9 @@ function App() {
               </div>
             )}
             {count === 4 && (
-              <div id="ProjectContainer" className="ProjectContainer">
+              <div  id="ProjectContainer" className="ProjectContainer">
                 <h2 className="projectTitle">Projects</h2>
-                <div className="projects">
+                <div data-aos="fade-out"  data-aos-duration="2000"  className="projects">
                   <div className="project">
                     <img src={eshop}></img>
                     <div className="project-details">
@@ -790,15 +795,15 @@ function App() {
               </div>
             )}
             {count === 5 && (
-              <div id="contact" className="contact">
-                <div className="contact__Image">
+              <div  id="contact" className="contact">
+                <div data-aos="fade-out" data-aos-duration="2000" className="contact__Image">
                   <img
                     src={callWaiting}
                     alt="profile picture"
                     className="contact__img"
                   />
                 </div>
-                <div className="contact__form">
+                <div data-aos="fade-out" data-aos-duration="2000" className="contact__form">
                   <form id="contactForm" className="form" onSubmit={sendEmail}>
                     <p className="title">Contact Me</p>
                     <p className="message">
