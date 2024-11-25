@@ -309,7 +309,7 @@ function App() {
               </div>
             )}
             {count === 2 && (
-              <div  id="skills-edu" className="skills-edu">
+              <div data-aos="fade-out"  data-aos-duration="2000"  id="skills-edu" className="skills-edu">
                 <div data-aos="fade-out"  data-aos-duration="2000" className="education">
                   <h2 id="skillsheading" className="educationTitle">
                     {" "}
@@ -419,7 +419,7 @@ function App() {
                     .
                   </span>
                 </div>
-                <div data-aos="fade-out"  data-aos-duration="2000" className="skills">
+                <div  className="skills">
                   <h2 id="skillsheading" className="skillsTitle">
                     {" "}
                     Skills <i class="fas fa-tools"></i>
