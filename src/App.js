@@ -19,7 +19,7 @@ import todoappVideo from "./assets/todoapp.mp4";
 import callWaiting from "./assets/callwaiting.svg";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import emailjs from "emailjs-com";
-import resume from "./assets/Madhu.resume.pdf";
+import resume from "./assets/MyCv.pdf";
 import { Tooltip } from "react-tooltip";
 import Loader from "./Loader";
 import AOS from "aos";
@@ -78,13 +78,13 @@ function App() {
   return (
     <>
       {reload ? (
-        <div data-aos="fade-in"  data-aos-duration="2000" id="Base" className="Base">
+        <div data-aos="fade-in"  data-aos-duration="1000" id="Base" className="Base">
           <div className="nav">
             <h2 id="brand" className="brand">
               M D
             </h2>
             <div className="actionBtns">
-              <a class="btn btn-primary" href={resume} download>
+              <a target="_blank" class="btn btn-primary" href={resume} download>
                 {" "}
                 <button id="resume" className="resume">
                   {" "}
@@ -106,7 +106,7 @@ function App() {
            id="wrapper" className="wrapper">
             {count === 0 && (
               <div  className="main-content">
-                <div data-aos="fade-out"  data-aos-duration="2000" className="image-container">
+                <div data-aos="fade-out"  data-aos-duration="1000" className="image-container">
                   <img src={profile} alt="profilePic"></img>
                   <p className="name">
                     Madhu Damodhar
@@ -124,7 +124,7 @@ function App() {
                   </p>
                 </div>
 
-                <div data-aos="fade-in"  data-aos-duration="2000" id="intro-container" className="intro-container">
+                <div data-aos="fade-in"  data-aos-duration="1000" id="intro-container" className="intro-container">
                   <p className="p">
                     <span className="hello">
                       Hello , <br />
@@ -202,8 +202,8 @@ function App() {
             )}
             {count === 1 && (
               <div  id="AboutMe" className="AboutMe">
-                <img data-aos="fade-out" data-aos-duration="2000"  id="img" src={aboutPic}></img>
-                <div data-aos="fade-in"  data-aos-duration="2000"  className="About-Container">
+                <img data-aos="fade-out" data-aos-duration="1000"  id="img" src={aboutPic}></img>
+                <div data-aos="fade-in"  data-aos-duration="1000"  className="About-Container">
                   <p className="about-para">
                     <span className="aboutMe">
                       About Me <br />
@@ -309,8 +309,8 @@ function App() {
               </div>
             )}
             {count === 2 && (
-              <div data-aos="fade-out"  data-aos-duration="2000"  id="skills-edu" className="skills-edu">
-                <div data-aos="fade-out"  data-aos-duration="2000" className="education">
+              <div data-aos="fade-out"  data-aos-duration="1000"  id="skills-edu" className="skills-edu">
+                <div data-aos="fade-out"  data-aos-duration="1000" className="education">
                   <h2 id="skillsheading" className="educationTitle">
                     {" "}
                     Education <i class="fas fa-graduation-cap"></i>
@@ -562,7 +562,7 @@ function App() {
             )}
             {count === 3 && (
               <div  id="Certifications" className="Certifications">
-                <span data-aos="fade-out"  data-aos-duration="2000" className="json">
+                <span data-aos="fade-out"  data-aos-duration="1000" className="json">
                   <br />
                   &nbsp;&nbsp;&nbsp;&nbsp;
                   <span className="highlightthankyou">&#123;</span> <br />{" "}
@@ -681,7 +681,7 @@ function App() {
             {count === 4 && (
               <div  id="ProjectContainer" className="ProjectContainer">
                 <h2 className="projectTitle">Projects</h2>
-                <div data-aos="fade-out"  data-aos-duration="2000"  className="projects">
+                <div data-aos="fade-out"  data-aos-duration="1000"  className="projects">
                   <div className="project">
                     <img src={eshop}></img>
                     <div className="project-details">
@@ -796,14 +796,14 @@ function App() {
             )}
             {count === 5 && (
               <div  id="contact" className="contact">
-                <div data-aos="fade-out" data-aos-duration="2000" className="contact__Image">
+                <div data-aos="fade-out" data-aos-duration="1000" className="contact__Image">
                   <img
                     src={callWaiting}
                     alt="profile picture"
                     className="contact__img"
                   />
                 </div>
-                <div data-aos="fade-out" data-aos-duration="2000" className="contact__form">
+                <div data-aos="fade-out" data-aos-duration="1000" className="contact__form">
                   <form id="contactForm" className="form" onSubmit={sendEmail}>
                     <p className="title">Contact Me</p>
                     <p className="message">
@@ -859,7 +859,7 @@ function App() {
             )}
             {count === 6 && (
               <div id="ems-container" className="ems-container">
-                <div id="ems-header" className="ems-header">
+                <div data-aos="fade-out"  data-aos-duration="1000"  id="ems-header" className="ems-header">
                   <h2>Employee Management System </h2>
                   <span>
                     Project Link:&nbsp;
@@ -871,7 +871,7 @@ function App() {
                     </a>
                   </span>
                 </div>
-                <div id="summary" className="summary">
+                <div data-aos="fade-out"  data-aos-duration="1000"  id="summary" className="summary">
                   <img src={emspic}></img>
                   <p id="s-para" className="s-para">
                     <h4>Summary</h4>
@@ -995,7 +995,7 @@ function App() {
 
             {count === 7 && (
               <div id="ems-container1" className="ems-container">
-                <div id="ems-header1" className="ems-header">
+                <div data-aos="fade-out"  data-aos-duration="1000"  id="ems-header1" className="ems-header">
                   <h2>Task Master </h2>
                   <span>
                     Project Link:&nbsp;
@@ -1008,8 +1008,8 @@ function App() {
                   </span>
                 </div>
                 <div id="summary1" className="summary">
-                  <img src={todoimg}></img>
-                  <p id="s-para" className="s-para">
+                  <img data-aos="fade-out"  data-aos-duration="1000"  src={todoimg}></img>
+                  <p data-aos="fade-out"  data-aos-duration="1000"  id="s-para" className="s-para">
                     <h4>Summary</h4>
                     The Task Master Application is a full-stack project designed
                     to simplify task management. Built with React.js on the
@@ -1028,7 +1028,7 @@ function App() {
                     efficiently.
                   </p>
                 </div>
-                <div id="functionalities1" className="functionalities">
+                <div data-aos="fade-out"  data-aos-duration="1000"  id="functionalities1" className="functionalities">
                   <video autoPlay loop muted>
                     <source src={todoappVideo} type="video/mp4" />
                   </video>
@@ -1080,7 +1080,7 @@ function App() {
                     </span>
                   </p>
                 </div>
-                <div id="backend1" className="backend">
+                <div  id="backend1" className="backend">
                   <img src={tododocker}></img>
                   <p className="b-para">
                     <h4>Backend Services</h4>
@@ -1136,8 +1136,8 @@ function App() {
               </div>
             )}
             {count === 8 && (
-              <div id="ems-container" className="ems-container">
-                <div id="ems-header" className="ems-header">
+              <div  id="ems-container" className="ems-container">
+                <div data-aos="fade-out"  data-aos-duration="1000"  id="ems-header" className="ems-header">
                   <h2>Ecommerce Web Application ( In Progress ) </h2>
                   <span>
                     Project Link:&nbsp;
@@ -1149,7 +1149,7 @@ function App() {
                     </a>
                   </span>
                 </div>
-                <div id="summary" className="summary">
+                <div data-aos="fade-out"  data-aos-duration="1000"  id="summary" className="summary">
                   <img src={eshopimage}></img>
                   <p id="s-para" className="s-para">
                     <h4>Summary</h4>
@@ -1168,7 +1168,7 @@ function App() {
                     security.
                   </p>
                 </div>
-                <div id="functionalities" className="functionalities">
+                <div data-aos="fade-out"  data-aos-duration="1000"  id="functionalities" className="functionalities">
                   <video autoPlay loop muted>
                     <source src={eshopVideo} type="video/mp4" />
                   </video>
@@ -1217,7 +1217,7 @@ function App() {
                     </span>
                   </p>
                 </div>
-                <div id="backend" className="backend">
+                <div   id="backend" className="backend">
                   <img src={eshopdocker}></img>
                   <p className="b-para">
                     <h4>Backend Services</h4>
@@ -1267,7 +1267,7 @@ function App() {
                     <br />
                   </p>
                 </div>
-                <div id="functionalities" className="functionalities">
+                <div   id="functionalities" className="functionalities">
                   <video id="ER-DAIGRAM" autoPlay loop muted>
                     <source src={eshopMobile} type="video/mp4" />
                   </video>
